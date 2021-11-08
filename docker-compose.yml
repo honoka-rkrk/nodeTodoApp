@@ -15,8 +15,9 @@ services:
     container_name: mysql
     image: mysql:5.7
     environment:
-      MYSQL_USER: root
-      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_USER: anraku
+      MYSQL_PASSWORD: secret
       MYSQL_DATABASE: express-sample
     ports:
       - 3306:3306
